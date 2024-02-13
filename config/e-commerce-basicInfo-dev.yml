@@ -4,12 +4,12 @@ spring:
   application:
     name: e-commerce-basicInfo
   datasource:
-    url: jdbc:mysql://192.168.206.128:3306/commerce?useUnicode=true&character Encoding=utf8&autoReconnect=true&serverTimezone=GMT%2B8       # 你的数据库地址
+    url: jdbc:mysql://127.0.0.1:3306/commerce?useUnicode=true&character Encoding=utf8&autoReconnect=true&serverTimezone=GMT%2B8       # 你的数据库地址
     username: root  # 你的数据库用户名
-    password: 123456789   # 你的数据库密码
+    password: 8022   # 你的数据库密码
     #type: com.alibaba.druid.pool.DruidDataSource
   redis:
-    host: 192.168.206.128 #r-2zec1x8fklnvti26iqpd.redis.rds.aliyuncs.com  Redis服务器地址
+    host: 127.0.0.1 #r-2zec1x8fklnvti26iqpd.redis.rds.aliyuncs.com  Redis服务器地址
     database: 0 # Redis数据库索引（默认为0）
     port: 7001 # Redis服务器连接端口
     password:  # Redis服务器连接密码（默认为空）
@@ -23,7 +23,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://192.168.206.128:8761/eureka
+      defaultZone: http://127.0.0.1:8761/eureka
   instance:
     prefer-ip-address: true
     instance-id: ${spring.cloud.client.ip-address}:${server.port}
