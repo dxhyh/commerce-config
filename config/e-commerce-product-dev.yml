@@ -4,7 +4,7 @@ spring:
   application:
     name: e-commerce-product
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/commerce?useUnicode=true&character Encoding=utf8&autoReconnect=true&serverTimezone=GMT%2B8       # 你的数据库地址
+    url: jdbc:mysql://127.0.0.1:3306/commerce?useUnicode=true&character&Encoding=utf8&autoReconnect=true&serverTimezone=GMT%2B8       # 你的数据库地址
     username: root  # 你的数据库用户名
     password: 8022   # 你的数据库密码
     #type: com.alibaba.druid.pool.DruidDataSource
