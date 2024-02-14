@@ -7,7 +7,7 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/commerce?useUnicode=true&character Encoding=utf8&autoReconnect=true&serverTimezone=GMT%2B8       # 你的数据库地址
     username: root  # 你的数据库用户名
     password: 8022   # 你的数据库密码
-    #type: com.alibaba.druid.pool.DruidDataSource
+    type: com.alibaba.druid.pool.DruidDataSource
   redis:
     host: 127.0.0.1 #r-2zec1x8fklnvti26iqpd.redis.rds.aliyuncs.com  Redis服务器地址
     database: 0 # Redis数据库索引（默认为0）
